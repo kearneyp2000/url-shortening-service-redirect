@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json({ extended: false }));
 
 app.get("/", (req,res) => {
-    res.send("<h1>Redirect Service</h1>")
+    res.send("<h1>Redirect Service Is Running</h1>")
 });
 
 app.get('/:code', async (req, res) => {
